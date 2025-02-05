@@ -122,7 +122,41 @@ button {
 }
 
 #total {
-  text-align: right;
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
 }
+
+.hidden {
+  display: none;
+}
+
+#finalizar-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#finalizar-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 380px) and (max-width: 400px) {
+  #resumo li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 379px) {
+  body {
+    font-size: 80%;
+  }
+}
+
