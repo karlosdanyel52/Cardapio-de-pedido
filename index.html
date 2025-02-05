@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loja de Marmitas</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Bem-vindo à Loja de Marmitas do Daniel Silva</h1>
-      <h2>Cardápio</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Tamanho</th>
-            <th>Bife Acebolado (BA)</th>
-            <th>Filé de Frango (FF)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>P</td>
-            <td>R$ 16.00</td>
-            <td>R$ 15.00</td>
-          </tr>
-          <tr>
-            <td>M</td>
-            <td>R$ 18.00</td>
-            <td>R$ 17.00</td>
-          </tr>
-          <tr>
-            <td>G</td>
-            <td>R$ 22.00</td>
-            <td>R$ 21.00</td>
-          </tr>
-        </tbody>
-      </table>
 
-      <div class="form">
-        <label for="sabor">Escolha o sabor:</label>
-        <select id="sabor">
-          <option value="BA">Bife Acebolado</option>
-          <option value="FF">Filé de Frango</option>
-        </select>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de Marmitas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <label for="tamanho">Escolha o tamanho:</label>
-        <select id="tamanho">
-          <option value="P">P</option>
-          <option value="M">M</option>
-          <option value="G">G</option>
-        </select>
+<body>
+  <div class="container">
+    <h1>Bem-vindo à Loja de Marmitas do Daniel Silva</h1>
+    <h2>Cardápio</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tamanho</th>
+          <th>Bife Acebolado (BA)</th>
+          <th>Filé de Frango (FF)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>P</td>
+          <td>R$ 16.00</td>
+          <td>R$ 15.00</td>
+        </tr>
+        <tr>
+          <td>M</td>
+          <td>R$ 18.00</td>
+          <td>R$ 17.00</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>R$ 22.00</td>
+          <td>R$ 21.00</td>
+        </tr>
+      </tbody>
+    </table>
 
-        <button class="button01" onclick="adicionarPedido()">
-          Adicionar Pedido
-        </button>
-      </div>
+    <div class="form">
+      <label for="sabor">Escolha o sabor:</label>
+      <select id="sabor">
+        <option value="BA">Bife Acebolado</option>
+        <option value="FF">Filé de Frango</option>
+      </select>
 
-      <h2>Resumo do Pedido</h2>
-      <ul id="resumo"></ul>
-      <h3 id="total">Total: R$ 0.00</h3>
+      <label for="tamanho">Escolha o tamanho:</label>
+      <select id="tamanho">
+        <option value="P">P</option>
+        <option value="M">M</option>
+        <option value="G">G</option>
+      </select>
+
+      <button class="button01" onclick="adicionarPedido()">
+        Adicionar Pedido
+      </button>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <h2>Resumo do Pedido</h2>
+    <ul id="resumo"></ul>
+    <h3 id="total">Total: R$ 0.00</h3>
+
+    <button id="finalizar-btn" class="hidden">Continuar</button>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="segunda pagina/segundoscript.js"></script>
+</body>
+
 </html>
