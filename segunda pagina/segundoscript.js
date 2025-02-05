@@ -75,8 +75,8 @@ function enviarParaWhatsApp() {
   if (tipoRecebimento === "Entrega") {
     // Monta a mensagem final
     let mensagem =
-      `📌 *---------------Resumo do Pedido:--------------*\n${resumoPedidos}\n\n💰 *Total:* R$ ${total}` +
-      `\n\n👤 *----------------Dados do Cliente:----------------*\n📝 *Nome:* ${nome}\n📞 *Celular:* ${celular}` +
+      `📌 *--------Resumo do Pedido:--------*\n${resumoPedidos}\n\n💰 *Total:* R$ ${total}` +
+      `\n\n👤 *---------Dados do Cliente:---------*\n📝 *Nome:* ${nome}\n📞 *Celular:* ${celular}` +
       `\n💳 *Tipo de Pagamento:* ${tipoPagamento}\n🚚 *Tipo de Recebimento:* ${tipoRecebimento}${endereco}` +
       "\n\n📌 *Seu pedido foi finalizado com sucesso! A entrega está em andamento e será realizada em até 2 horas. Agradecemos sua preferência!*";
 
@@ -88,8 +88,8 @@ function enviarParaWhatsApp() {
   } else {
     // Monta a mensagem final
     let mensagem =
-      `📌 *---------------Resumo do Pedido:--------------*\n${resumoPedidos}\n\n💰 *Total:* R$ ${total}` +
-      `\n\n👤 *----------------Dados do Cliente:----------------*\n📝 *Nome:* ${nome}\n📞 *Celular:* ${celular}` +
+      `📌 *--------Resumo do Pedido:-------*\n${resumoPedidos}\n\n💰 *Total:* R$ ${total}` +
+      `\n\n👤 *---------Dados do Cliente:---------*\n📝 *Nome:* ${nome}\n📞 *Celular:* ${celular}` +
       `\n💳 *Tipo de Pagamento:* ${tipoPagamento}\n🚚 *Tipo de Recebimento:* ${tipoRecebimento}${endereco}` +
       '\n\n📌 *"Seu pedido foi finalizado com sucesso! Ele estará pronto para retirada em até 1 hora. Aguardamos você!"*';
 
