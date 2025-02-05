@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja de Marmitas</title>
+  <link rel="stylesheet" href="segunda pagina/segundostyles.css" />
+
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>DADOS PARA RECEBIMENTO</h1>
+
+
+
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    <br><br>
+    <label for="celular">Celular:</label><br>
+    <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" maxlength="15"
+      oninput="formatarCelular(this)" pattern="\(\d{2}\) \d{5}-\d{4}"
+      title="O número deve estar no formato (XX) XXXXX-XXXX" required>
+    <br>
+    <br>
+
+
+    <div class='py'>
+
+      <h3>Tipo de recebimento:</h3>
+      <label>
+        <input type="radio" id="option1" class="option-input radio" name="example1" />
+        Retirada
+      </label>
+      <label>
+        <input type="radio" id="option2" class="option-input radio" name="example1" />
+        Entrega
+      </label>
+
+      <br><br>
+
+      <div id="entrega" class="hidden">
+        <h3>Endereço:</h3>
+        <label for="rua">Rua:</label>
+        <input type="text" id="rua" name="rua" placeholder="Digite a rua" required>
+        <br><br>
+        <label for="numero">N°:</label>
+        <input type="number" id="numero" name="numero" placeholder="Digite o N° da Casa" required>
+        <br><br>
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" placeholder="Digite o bairro" required>
+        <br><br>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade" required>
+        <br><br>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+
+      </div>
+
+      <h3>Tipo de Pagamento:</h3>
+
+      <label>
+        <input type="radio" class="option-input radio" name="example" />
+        Pix
+      </label>
+
+      <label>
+        <input type="radio" class="option-input radio" name="example" />
+        Dinheiro
+      </label>
+      <label>
+        <input type="radio" class="option-input radio" name="example" />
+        Cartão
+      </label>
+
+    </div>
+
+    <br><br>
+    <button id="finalizar-btn" type="button" onclick="enviarParaWhatsApp()">FINALIZAR PEDIDO</button>
+
+
+
+  </div>
+
+  <script src="segunda pagina/segundoscript.js"></script>
+
+</body>
+
+</html>
